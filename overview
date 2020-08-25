@@ -1,0 +1,11 @@
+WEEK 8
+HashMap
+    Typically, hash maps and lists are used together.
+        The hash map provides quick access to a specific key or keys,
+        while the list is used, for instance, to maintain order.
+    System.nanoTime() method returns the time of the computer in nanoseconds
+    DRY (Don't Repeat Yourself) = code duplication should be avoided
+    The hash map has a maximum of one value per key
+        If a new key-value pair is added to the hash map, but the key has already been associated
+        with some other value stored in the hash map, the old value will vanish from the hash map.
+        

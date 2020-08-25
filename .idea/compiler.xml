@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Part08_06.Nicknames" />
+        <module name="Part11_12.SensorsAndTemperature" />
+        <module name="Part09_09.SetAsAMethodParameter" />
+        <module name="Part09_08.MapAsAMethodParameter" />
+        <module name="Part13_10.Greeter" />
+        <module name="Part08_14.DictionaryOfManyTranslations" />
+        <module name="Part14_02.FinnishParties" />
+        <module name="Part09_12.Animals" />
+        <module name="Part08_02.AverageOfPositiveNumbers" />
+        <module name="Part10_08.Weighting" />
+        <module name="Part13_08.UserTitle" />
+        <module name="Part09_06.InterfaceInABox" />
+        <module name="Part13_01.MyFirstApplication" />
+        <module name="Part09_11.Herds" />
+        <module name="Part11_10.FlightControl" />
+        <module name="Part14_03.SavingsCalculator" />
+        <module name="Part14_01.Shanghai" />
+        <module name="Part13_12.VocabularyPractice" />
+        <module name="Part09_05.TacoBoxes" />
+        <module name="Part11_13.SaveableDictionary" />
+        <module name="Part08_01.Cubes" />
+        <module name="Part10_17.SortThemCards" />
+        <module name="Part12_04.List" />
+        <module name="Part11_01.Customer" />
+        <module name="Part08_04.LiquidContainers2" />
+        <module name="Part08_03.LiquidContainers" />
+        <module name="Part08_11.SameDate" />
+        <module name="Part13_02.ButtonAndLabel" />
+        <module name="Part10_14.Literature" />
+        <module name="Part10_07.UniqueLastNames" />
+        <module name="Part12_07.Die" />
+        <module name="Part10_11.WageOrder" />
+        <module name="Part14_06.Smiley" />
+        <module name="Part08_09.PrintMeAnotherHashmap" />
+        <module name="Osa14_08.Hurraa" />
+        <module name="Part13_06.Notifier" />
+        <module name="Part10_03.PositiveNumbers" />
+        <module name="Part11_11.ValidatingParameters" />
+        <module name="Part10_12.StudentsOnAplhabeticalOrder" />
+        <module name="Part08_12.HashedDate" />
+        <module name="Part11_02.ABookAndAPlane" />
+        <module name="Part12_03.SumTheseForMe" />
+        <module name="Part10_01.AverageOfNumbers" />
+        <module name="Part08_05.TodoList" />
+        <module name="Part09_07.ListAsAMethodParameter" />
+        <module name="Part10_10.BooksFromFile" />
+        <module name="Osa08_13.VehicleRegistry" />
+        <module name="Part09_10.OnlineStore" />
+        <module name="Part10_04.Divisible" />
+        <module name="Part10_06.LimitedNumbers" />
+        <module name="Part14_05.CyclingStatistics" />
+        <module name="Part08_08.PrintMeMyHashmap" />
+        <module name="Part11_05.PlayerAndBot" />
+        <module name="Part08_15.StorageFacility" />
+        <module name="Part12_05.HashMap" />
+        <module name="Part10_16.EnumAndIterator" />
+        <module name="Part09_02.PersonAndSubclasses" />
+        <module name="Part10_15.RegularExpressions" />
+        <module name="Part10_09.ReadingFilesPerLine" />
+        <module name="Part13_07.TextStatisticsPart2" />
+        <module name="Part13_05.TextStatistics" />
+        <module name="Part12_08.Lottery" />
+        <module name="Part12_01.Hideout" />
+        <module name="Part12_09.ArrayAsString" />
+        <module name="Part08_10.IOweYou" />
+        <module name="Part11_04.StudentAndUniversity" />
+        <module name="Part14_10.Database" />
+        <module name="Part12_10.MagicSquare" />
+        <module name="Part10_13.LiteracyComparison" />
+        <module name="Part13_11.Joke" />
+        <module name="Part11_07.BiggerClassDiagram" />
+        <module name="Part09_04.DifferentKindsOfBoxes" />
+        <module name="Part11_09.ThreePackages" />
+        <module name="Part13_13.TicTacToe" />
+        <module name="Part11_06.SaveablePerson" />
+        <module name="Part09_03.Warehousing" />
+        <module name="Part09_01.ABC" />
+        <module name="Part14_09.Asteroids" />
+        <module name="Part14_07.Collage" />
+        <module name="Part8_07.Abbreviations" />
+        <module name="Part11_03.ShowAndTicket" />
+        <module name="Part10_05.PrintingUserInput" />
+        <module name="Part10_02.AverageOfSelectedNumbers" />
+        <module name="Part13_04.BorderPane" />
+        <module name="Part12_06.Numbers" />
+        <module name="Part11_08.FirstPackages" />
+        <module name="Part13_09.MultipleViews" />
+        <module name="Part14_04.UnfairAdvertisement" />
+        <module name="Part12_02.Pipe" />
+        <module name="Part13_03.ButtonAndTextField" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Osa08_13.VehicleRegistry" target="1.8" />
+      <module name="Osa14_08.Hurraa" target="11" />
+      <module name="Part08_01.Cubes" target="1.8" />
+      <module name="Part08_02.AverageOfPositiveNumbers" target="1.8" />
+      <module name="Part08_03.LiquidContainers" target="1.8" />
+      <module name="Part08_04.LiquidContainers2" target="1.8" />
+      <module name="Part08_05.TodoList" target="1.8" />
+      <module name="Part08_06.Nicknames" target="1.8" />
+      <module name="Part08_08.PrintMeMyHashmap" target="1.8" />
+      <module name="Part08_09.PrintMeAnotherHashmap" target="1.8" />
+      <module name="Part08_10.IOweYou" target="1.8" />
+      <module name="Part08_11.SameDate" target="1.8" />
+      <module name="Part08_12.HashedDate" target="1.8" />
+      <module name="Part08_14.DictionaryOfManyTranslations" target="1.8" />
+      <module name="Part08_15.StorageFacility" target="1.8" />
+      <module name="Part09_01.ABC" target="1.8" />
+      <module name="Part09_02.PersonAndSubclasses" target="1.8" />
+      <module name="Part09_03.Warehousing" target="1.8" />
+      <module name="Part09_04.DifferentKindsOfBoxes" target="1.8" />
+      <module name="Part09_05.TacoBoxes" target="1.8" />
+      <module name="Part09_06.InterfaceInABox" target="1.8" />
+      <module name="Part09_07.ListAsAMethodParameter" target="1.8" />
+      <module name="Part09_08.MapAsAMethodParameter" target="1.8" />
+      <module name="Part09_09.SetAsAMethodParameter" target="1.8" />
+      <module name="Part09_10.OnlineStore" target="1.8" />
+      <module name="Part09_11.Herds" target="1.8" />
+      <module name="Part09_12.Animals" target="1.8" />
+      <module name="Part10_01.AverageOfNumbers" target="1.8" />
+      <module name="Part10_02.AverageOfSelectedNumbers" target="1.8" />
+      <module name="Part10_03.PositiveNumbers" target="1.8" />
+      <module name="Part10_04.Divisible" target="1.8" />
+      <module name="Part10_05.PrintingUserInput" target="1.8" />
+      <module name="Part10_06.LimitedNumbers" target="1.8" />
+      <module name="Part10_07.UniqueLastNames" target="1.8" />
+      <module name="Part10_08.Weighting" target="1.8" />
+      <module name="Part10_09.ReadingFilesPerLine" target="1.8" />
+      <module name="Part10_10.BooksFromFile" target="1.8" />
+      <module name="Part10_11.WageOrder" target="1.8" />
+      <module name="Part10_12.StudentsOnAplhabeticalOrder" target="1.8" />
+      <module name="Part10_13.LiteracyComparison" target="1.8" />
+      <module name="Part10_14.Literature" target="1.8" />
+      <module name="Part10_15.RegularExpressions" target="1.8" />
+      <module name="Part10_16.EnumAndIterator" target="1.8" />
+      <module name="Part10_17.SortThemCards" target="1.8" />
+      <module name="Part11_01.Customer" target="1.8" />
+      <module name="Part11_02.ABookAndAPlane" target="1.8" />
+      <module name="Part11_03.ShowAndTicket" target="1.8" />
+      <module name="Part11_04.StudentAndUniversity" target="1.8" />
+      <module name="Part11_05.PlayerAndBot" target="1.8" />
+      <module name="Part11_06.SaveablePerson" target="1.8" />
+      <module name="Part11_07.BiggerClassDiagram" target="1.8" />
+      <module name="Part11_08.FirstPackages" target="1.8" />
+      <module name="Part11_09.ThreePackages" target="1.8" />
+      <module name="Part11_10.FlightControl" target="1.8" />
+      <module name="Part11_11.ValidatingParameters" target="1.8" />
+      <module name="Part11_12.SensorsAndTemperature" target="1.8" />
+      <module name="Part11_13.SaveableDictionary" target="1.8" />
+      <module name="Part12_01.Hideout" target="1.8" />
+      <module name="Part12_02.Pipe" target="1.8" />
+      <module name="Part12_03.SumTheseForMe" target="1.8" />
+      <module name="Part12_04.List" target="1.8" />
+      <module name="Part12_05.HashMap" target="1.8" />
+      <module name="Part12_06.Numbers" target="1.8" />
+      <module name="Part12_07.Die" target="1.8" />
+      <module name="Part12_08.Lottery" target="1.8" />
+      <module name="Part12_09.ArrayAsString" target="1.8" />
+      <module name="Part12_10.MagicSquare" target="1.8" />
+      <module name="Part13_01.MyFirstApplication" target="11" />
+      <module name="Part13_02.ButtonAndLabel" target="11" />
+      <module name="Part13_03.ButtonAndTextField" target="11" />
+      <module name="Part13_04.BorderPane" target="11" />
+      <module name="Part13_05.TextStatistics" target="11" />
+      <module name="Part13_06.Notifier" target="11" />
+      <module name="Part13_07.TextStatisticsPart2" target="11" />
+      <module name="Part13_08.UserTitle" target="11" />
+      <module name="Part13_09.MultipleViews" target="11" />
+      <module name="Part13_10.Greeter" target="11" />
+      <module name="Part13_11.Joke" target="11" />
+      <module name="Part13_12.VocabularyPractice" target="11" />
+      <module name="Part13_13.TicTacToe" target="11" />
+      <module name="Part14_01.Shanghai" target="11" />
+      <module name="Part14_02.FinnishParties" target="1.8" />
+      <module name="Part14_03.SavingsCalculator" target="11" />
+      <module name="Part14_04.UnfairAdvertisement" target="11" />
+      <module name="Part14_05.CyclingStatistics" target="11" />
+      <module name="Part14_06.Smiley" target="11" />
+      <module name="Part14_07.Collage" target="1.8" />
+      <module name="Part14_09.Asteroids" target="11" />
+      <module name="Part14_10.Database" target="1.8" />
+      <module name="Part8_07.Abbreviations" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

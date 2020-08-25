@@ -6,37 +6,35 @@ import java.util.ArrayList;
  * @author Jere
  */
 public class UserInterface {
-    private final Scanner scan;
-    private TodoList todo;
 
-    public UserInterface(TodoList todo, Scanner scan) {
-        this.scan = scan;
-        this.todo = todo;
+    private TodoList todoList;
+    private final Scanner scanner;
+
+    public UserInterface(TodoList todoList, Scanner scanner) {
+        this.todoList = todoList;
+        this.scanner = scanner;
     }
-    
-    public void start() {
-        while (true) {
+
+    public void start(){
+        while (true){
             System.out.print("Command: ");
-            String command = scan.nextLine();
-            switch (command) {
+            String command = scanner.nextLine();
+            switch (command){
                 case "add":
                     System.out.print("To add: ");
-                    String thingToDo = scan.nextLine();
-                    todo.add(thingToDo);
+                    todoList.add(scanner.nextLine());
                     break;
                 case "list":
-                    todo.print();
+                    todoList.print();
                     break;
                 case "remove":
-                    System.out.print("Which one is removed? ");
-                    int toDoThingIndex = Integer.parseInt(scan.nextLine());
-                    todo.remove(toDoThingIndex);
+                    System.out.println("Which one is removed? ");
+                    todoList.remove(Integer.parseInt(scanner.nextLine()));
                     break;
                 case "stop":
                     break;
             }
-
-            if (command.equals("stop")) {
+            if (command.equals("stop")){
                 break;
             }
         }

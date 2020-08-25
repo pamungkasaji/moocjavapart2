@@ -10,7 +10,7 @@ public class Nicknames {
         map.put("mix", "michael");
         map.put("artie", "arthur");
         System.out.println(map.get("matt"));
-        System.out.println("no test haha");
+        System.out.println(map.get("dadd"));
     }
 
 }
