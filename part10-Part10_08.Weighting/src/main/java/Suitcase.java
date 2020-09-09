@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class Suitcase {
 
@@ -20,11 +21,15 @@ public class Suitcase {
     }
 
     public int totalWeight() {
-        return items.stream().mapToInt(item -> item.getWeight()).sum();
+        return items.stream()
+                .mapToInt(item -> item.getWeight())
+                .sum();
     }
 
     public void printItems() {
-        items.stream().forEach(System.out::println);
+        items.stream()
+                .forEach(item -> System.out.println(item));
+//        items.stream().forEach(System.out::println);
     }
 
     public Item heaviestItem() {
@@ -32,20 +37,22 @@ public class Suitcase {
             return null;
         }
 
-        // Tutustumme järjestämiseen hieman myöhemmin kurssilla
-        return this.items.stream().max((t1, t2) -> t1.getWeight() - t2.getWeight()).get();
+        return items.stream()
+                .max(Comparator.comparingInt(Item::getWeight)).get();
+
+        //return this.items.stream().max((t1, t2) -> t1.getWeight() - t2.getWeight()).get();
     }
 
     @Override
     public String toString() {
-        if (this.items.isEmpty()) {
+        if (items.isEmpty()) {
             return "no items (0 kg)";
         }
 
-        if (this.items.size() == 1) {
+        if (items.size() == 1) {
             return "1 item (" + this.totalWeight() + " kg)";
         }
 
-        return this.items.size() + " items (" + this.totalWeight() + " kg)";
+        return items.size() + " items (" + this.totalWeight() + " kg)";
     }
 }

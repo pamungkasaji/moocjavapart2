@@ -21,11 +21,16 @@ public class Hold {
     }
 
     public int totalWeight() {
-        return suitcases.stream().mapToInt(suitcase -> suitcase.totalWeight()).sum();
+        return suitcases.stream()
+                .mapToInt(suitcase -> suitcase.totalWeight())
+                .sum();
+//        return suitcases.stream().mapToInt(suitcase -> suitcase.totalWeight()).sum();
     }
 
     public void printItems() {
-        suitcases.stream().forEach(suitcase -> suitcase.printItems());
+        suitcases.stream()
+                .forEach(suitcase -> suitcase.printItems());
+//        suitcases.stream().forEach(suitcase -> suitcase.printItems());
     }
 
     @Override

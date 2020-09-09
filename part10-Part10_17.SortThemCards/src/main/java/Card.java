@@ -40,6 +40,11 @@ public class Card implements Comparable<Card>{
 
     @Override
     public int compareTo(Card otherCard) {
-        return this.value == otherCard.getValue() ? this.suit.ordinal() - otherCard.getSuit().ordinal() : this.value - otherCard.getValue();
+        if (this.value == otherCard.getValue()){
+            return this.getSuit().ordinal() - otherCard.getSuit().ordinal();
+        } else {
+            return this.value - otherCard.getValue();
+        }
+        //return this.value == otherCard.getValue() ? this.suit.ordinal() - otherCard.getSuit().ordinal() : this.value - otherCard.getValue();
     }
 }

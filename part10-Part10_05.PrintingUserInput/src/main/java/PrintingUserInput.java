@@ -6,15 +6,14 @@ public class PrintingUserInput {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ArrayList<String> userInputCollection = new ArrayList<>();
-        while (true) {
+        ArrayList<String> inputs = new ArrayList<>();
+        while (true){
             String input = scanner.nextLine();
-            if (input.isEmpty()) {
+            if (input.equals("")){
                 break;
             }
-            userInputCollection.add(input);
+            inputs.add(input);
         }
-        System.out.println("");
-        userInputCollection.forEach(System.out::println);
+        inputs.stream().forEach(System.out::println);
     }
 }

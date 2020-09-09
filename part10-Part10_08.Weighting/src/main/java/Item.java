@@ -11,15 +11,15 @@ public class Item {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public int getWeight() {
-        return this.weight;
+        return weight;
     }
 
     @Override
     public String toString() {
-        return this.name + ": (" + this.weight + " kg)";
+        return name + ": (" + weight + " kg)";
     }
 }

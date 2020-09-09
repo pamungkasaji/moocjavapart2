@@ -1,4 +1,4 @@
-WEEK 8
+PART 8
 HashMap
     Typically, hash maps and lists are used together.
         The hash map provides quick access to a specific key or keys,
@@ -8,4 +8,96 @@ HashMap
     The hash map has a maximum of one value per key
         If a new key-value pair is added to the hash map, but the key has already been associated
         with some other value stored in the hash map, the old value will vanish from the hash map.
-        
+
+....
+
+PART 9
+Object polymorphism
+    each variable can also be represented by the types of interfaces it implements and classes that it inherits
+    If we only need methods defined in the Object class, such as toString, equals and hashCode in a method,
+        we can simply use Object as the type of the method parameter
+            public void printManyTimes(Object object, int times) { ... }
+
+....
+
+PART 10
+Handling collections as streams
+    Stream is a way of going through a collection of data such that the programmer determines the operation to be performed on each value
+    With streams, the programmer defines a sequence of events that is executed for each value in a collection
+    A stream does not change the values in the original data collection, but merely processes them
+    stream() method can be called on any object that implements the Collection interface (e.g., ArrayList, HashSet, HashMap, ...)
+    example stream method : mapToInt(value -> another)
+
+Lambda Expressions
+    anonymous methods that do not have an "owner", i.e., they are not part of a class or an interface
+    The function contains both the parameter definition and the function body
+    using lambda function as a parameter
+        stream*.filter(value -> value > 5).*furtherAction*
+        stream*.filter(value -> Screeners.greaterThanFive(value))
+        stream*.filter(Screeners::greaterThanFive)
+    variables declared outside of an anonymous function cannot be used
+
+Stream Methods
+    divided into two categories:
+        (1) intermediate operations intended for processing elements
+            Intermediate operations return a value that can be further processed
+            method filter,  mapToInt
+        (2) terminal operations that end the processing of elements
+            returns a value to be processed
+            method average
+
+Terminal Operations
+    - count method for counting the number of values
+        .stream().count());
+    - forEach method defines what is done to each list value
+        .forEach(num -> System.out.println(num));
+    - collect method for gathering the list values into another collection
+        .collect(Collectors.toCollection(ArrayList::new));
+    - reduce method for combining stream elements to some other form
+        .reduce(0, (previousSum, value) -> previousSum + value);
+
+Intermediate Operations
+    Intermediate stream operations are methods that return a stream
+    - map, converting a value from one form to another
+    - filter, filtering values
+    - distinct, identifying unique values
+    - sorted, arranging values if possible
+
+Objects and Stream
+    books.stream()
+        .map(book -> book.getAuthor())              //getAuthor() Author object
+        .mapToInt(author -> author.getBirthYear())
+        .average()
+
+Files and Streams
+    List<String> rows = new ArrayList<>();
+    Files.lines(Paths.get("file.txt")).forEach(row -> rows.add(row));
+        lines method throw exception
+
+The Comparable Interface
+    If a class implements the Comparable interface, objects from that class can be sorted using Java's sorting algorithms.
+        public class Member implements Comparable<Member> { ... }
+    compareTo method required by the Comparable interface
+    objects of any class that implement the Comparable interface can be sorted using the sorted() method
+    a stream does not sort the original list - only the items in the stream are sorted.
+        to organize the original list, the sort method of the Collections class should be used
+
+Sorting Method as a Lambda Expression
+    Sorting a list WITHOUT having to implement the Comparable interface
+    `sort` method of the `Collections` class and the stream's `sorted` method accept a lambda expression
+        as a parameter that defines the sorting criteria
+        Both methods can be provided with an object that implements the Comparator interface
+            sort method = public static <T> void sort(List<T> list, Comparator<? super T> c)
+                Collections.sort(persons, (p1, p2) -> p1.getBirthYear() - p2.getBirthYear());
+            sorted method = Stream<T> sorted(Comparator<? super T> comparator)
+                persons.stream().sorted((p1, p2) -> {
+                    return p1.getBirthYear() - p2.getBirthYear(); });
+
+Sorting By Multiple Criteria
+    Comparator class provides two essential methods for sorting: comparing and thenComparing
+    The comparing method is passed the value to be compared first, and the thenComparing method is the next value to be compared.
+    thenComparing method can be used many times by chaining methods
+
+Regular Expression, Enum, Iterator hampir sama seperti MOOC OOP 2013
+    ordinal() method = The numeric identifier of an enum field value
+    Ada tambahan exercise 17
