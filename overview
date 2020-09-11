@@ -101,3 +101,69 @@ Sorting By Multiple Criteria
 Regular Expression, Enum, Iterator hampir sama seperti MOOC OOP 2013
     ordinal() method = The numeric identifier of an enum field value
     Ada tambahan exercise 17
+
+Sorting with and without Comparable interface
+
+PART 11
+Class Diagram
+    A class diagram describes classes and their attributes, constructors and methods as well as the connections between classes
+    class diagram describes the structure of an object but not its functionality
+    Connections between classes
+        In a class diagram, the connections between classes are shown as arrows.
+    Describing inheritance
+        In a class diagram inheritance is described by an arrow with a triangle head
+    Describing interfaces
+        Implementing an interface is shown as a dashed arrow with a triangle arrowhead.
+
+Package (Hampir sama seperti mooc oop 2013)
+    it's wise to divide the classes into packages. Classes in one package might share funcionality, purpose, or some other logical property
+    domain is often used to refer to the storage space of the classes that represent the concepts of the problem domain
+
+Exceptions
+    Handling exceptions
+        use the try {} catch (Exception e) {} block structure to handle exceptions
+    Exceptions and resources
+        A resource is an object that must be closed after the program is finished with it, such as files
+            try (Scanner reader = new Scanner(new File("file.txt"))) { ... }
+        The try-with-resources approach is useful for handling resources, because the program closes the used resources automatically.
+        If the resources are not closed, the operating system sees them as being in use until the program is closed.
+    Shifting the responsibility
+        Methods and constructors can throw exceptions
+        We can handle exceptions by wrapping the code into a try-catch block or throwing them out of the method.
+            public List<String> readLines(String fileName) throws Exception {
+        Throws clause is used to declare an exception, which means it works similar to the try-catch block.
+        throws keyword is in the function signature, followed by exception class
+    Throwing exceptions
+        The throw command throws an exception. Throw keyword is used inside a function, followed by instance
+        throw keyword is used to throw an exception explicitly.
+            throw new NumberFormatException();
+        One exception that the user does not have to prepare for is IllegalArgumentException, It can be used when we want to ensure certain parameter values
+            If an exception is a runtime exception, e.g. IllegalArgumentException, we do not have to warn about throwing it on the method declaration.
+    Exceptions and Interfaces
+        An Interface can have methods which throw an exception
+            String load(String fileName) throws Exception;
+        If an interface declares a throws Exception attribute to a method, the class implementing this interface must also have this attribute. However the class does not have to throw an error
+    Details of the exception
+        A catch block defines which exception to prepare for with catch (Exception e)
+            The details of the exception are saved to the e variable.
+            The Exception class has some useful methods. For example printStackTrace() shows how we ended up with an exception.
+                We read a stack trace from the bottom up.
+In Java, there are two types of exceptions:
+    - Checked are the exceptions that are checked at compile time. Exceptions which must be handled
+        These exceptions have to be prepared for with a try-catch block or by throwing them out of a method with a throws attribute in a method declaration.
+        For example, exceptions related to handling files, including IOException and  FileNotFoundException
+    - Unchecked exceptions are not checked at compile-time, but they are checked at runtime
+        They can be thrown during execution. These kinds of exceptions do not have to be handled with a try-catch block.
+        In Java exceptions under Error and RuntimeException classes are unchecked exceptions
+            IllegalArgumentException and NullPointerException are runtime exception
+    Error, Error is irrecoverable e.g. OutOfMemoryError, VirtualMachineError, AssertionError etc.
+https://www.javatpoint.com/exception-handling-in-java#
+
+...
+
+Part 12
+Type parameters
+    Generics relates to how classes that store objects can store objects of a freely chosen type
+    ArrayList, for instance, receives a single type parameter, while HashMap receives two.
+
+...

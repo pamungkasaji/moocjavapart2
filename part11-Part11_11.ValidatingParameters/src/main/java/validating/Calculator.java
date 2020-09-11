@@ -10,12 +10,11 @@ public class Calculator {
         for (int i = 1; i <= num; i++) {
             answer *= i;
         }
-
         return answer;
     }
 
     public int binomialCoefficent(int setSize, int subsetSize) {
-        if (setSize < 0 || subsetSize < 0 || subsetSize > setSize) {
+        if (subsetSize < 0 || subsetSize > setSize) {
             throw new IllegalArgumentException("binomial coeficient arguments exception.");
         }
         int numerator = factorial(setSize);

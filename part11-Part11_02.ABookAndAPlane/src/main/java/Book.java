@@ -1,7 +1,4 @@
-/**
- *
- * @author Jere
- */
+
 public class Book {
     private String name;
     private String author;

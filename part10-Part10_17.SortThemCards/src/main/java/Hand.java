@@ -23,7 +23,7 @@ public class Hand implements Comparable<Hand> {
     }
 
     public int handValue(){
-        return cardsInHand.stream().mapToInt(value -> value.getValue()).sum();
+        return cardsInHand.stream().mapToInt(card -> card.getValue()).sum();
     }
 
     @Override
@@ -31,17 +31,7 @@ public class Hand implements Comparable<Hand> {
         return this.handValue() - o.handValue();
     }
 
-//    public void sortBySuit() {
-//        BySuitInValueOrder sort = new BySuitInValueOrder();
-//        Collections.sort(cardsInHand, sort);
-//    }
-//
-//    public int getHandValue() {
-//        return cardsInHand.stream().mapToInt(Card::getValue).sum();
-//    }
-//
-//    @Override
-//    public int compareTo(Hand otherHand) {
-//        return this.getHandValue() - otherHand.getHandValue();
-//    }
+    public void sortBySuit() {
+        Collections.sort(cardsInHand, new BySuitInValueOrder());
+    }
 }

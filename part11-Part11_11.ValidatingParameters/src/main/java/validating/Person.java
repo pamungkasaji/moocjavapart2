@@ -6,7 +6,6 @@ public class Person {
     private int age;
 
     public Person(String name, int age) {
-        
         if (name == null || name.isEmpty() || name.length() > 40) {
             throw new IllegalArgumentException("Error in name argument");
         }
@@ -15,13 +14,5 @@ public class Person {
         }
         this.name = name;
         this.age = age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getAge() {
-        return age;
     }
 }

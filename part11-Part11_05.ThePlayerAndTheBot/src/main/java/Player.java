@@ -1,7 +1,4 @@
-/**
- *
- * @author Jere
- */
+
 public class Player {
     private String name;
     
