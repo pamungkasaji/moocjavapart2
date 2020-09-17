@@ -159,11 +159,24 @@ In Java, there are two types of exceptions:
     Error, Error is irrecoverable e.g. OutOfMemoryError, VirtualMachineError, AssertionError etc.
 https://www.javatpoint.com/exception-handling-in-java#
 
-...
+Iterate through Map using entrySet() method
+
+Processing File
+    new Scanner(Paths.get(file))
+    Using PrintWriter class
 
 Part 12
 Type parameters
     Generics relates to how classes that store objects can store objects of a freely chosen type
-    ArrayList, for instance, receives a single type parameter, while HashMap receives two.
+    ArrayList receives a single type parameter, while HashMap receives two.
+    For example, generic class Locker that can hold one object of any type
+        public class Locker<T> { ... }
+    generic interfaces
+        public interface List<T> {
+            void add(T value);
+        }
+    There are two ways for a class to implement a generic interface.
+        - public class MovieList implements List<Movie> { ... }
+        - public class GeneralList<T> implements List<T> { ... }
 
 ...

@@ -1,29 +1,25 @@
 
-/**
- *
- * @author Jere
- */
 public class Hideout<T> {
 
     private T element;
 
-    public void putIntoHideout(T toHide) {
+    public void putIntoHideout(T toHide){
         if (element != null) {
             element = null;
         }
         element = toHide;
     }
-    
-    public T takeFromHideout() {
-        if (isInHideout()) {
-            T result = element;
+
+    public T takeFromHideout(){
+        if (isInHideout()){
+            T returned = element;
             element = null;
-            return result;
+            return returned;
         }
-        return element;
+        return null;
     }
-    
-    public boolean isInHideout() {
+
+    public boolean isInHideout(){
         return element != null;
     }
 }

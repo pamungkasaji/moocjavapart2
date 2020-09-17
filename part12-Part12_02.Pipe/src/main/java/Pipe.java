@@ -2,10 +2,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Jere
- */
 public class Pipe<T> {
 
     private List<T> elementCollection;
